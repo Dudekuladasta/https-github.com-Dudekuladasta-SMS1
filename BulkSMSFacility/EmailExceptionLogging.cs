@@ -57,7 +57,7 @@ namespace BulkSMSFacility
                     NetworkCred.Password = strPassword;  
                     smtp.UseDefaultCredentials = true;
                     smtp.Credentials = NetworkCred;
-                    smtp.Port = 587;
+                    smtp.Port = 587; //Port adding by dastagiri
                     smtp.Send(mailMessage); //sending Email
 
                 }  
