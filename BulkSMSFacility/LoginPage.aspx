@@ -46,7 +46,7 @@
     <br />
     <div>
         <img src="../Images/Toyota1.jpg" style="height: 17%; width: 10%; margin-left: 1px;" /></div>
-    <div class="Heading" style="background-color: rgb(140, 212, 239); height: 27px;"><h3 align="center">SMS Application</h3>
+    <div class="Heading" style="background-color: rgb(140, 212, 239); height: 27px;"><h3 align="center">SMS Application_Babu</h3>
         <%--<label style="padding-left: 45%; color: Black; font-weight: 800; text-align: center;">
             SMS Application
         </label>--%>
