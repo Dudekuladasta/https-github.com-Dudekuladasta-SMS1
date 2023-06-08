@@ -20,6 +20,12 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,13 +46,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AjaxControlToolkit">
-      <HintPath>..\..\Ajax and ProudMonkey dlls for message box\Version2\AjaxControlToolkit.dll</HintPath>
+      <HintPath>C:\Users\dbabu\Downloads\SMSApplication-master\SMSApplication-master\SMSApplicationSystem @ DealerMaster download\BulkSMSFacility\bin\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-    <Reference Include="MySql.Data.Entity, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Users\dbabu\Downloads\SMSApplication-master\SMSApplication-master\SMSApplicationSystem @ DealerMaster download\BulkSMSFacility\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>C:\Users\dbabu\Downloads\SMSApplication-master\SMSApplication-master\SMSApplicationSystem @ DealerMaster download\BulkSMSFacility\bin\MySql.Data.Entity.dll</HintPath>
+    </Reference>
     <Reference Include="ProudMonkey.Common.Controls">
-      <HintPath>..\..\Ajax and ProudMonkey dlls for message box\Version2\ProudMonkey.Common.Controls.dll</HintPath>
+      <HintPath>C:\Users\dbabu\Downloads\SMSApplication-master\SMSApplication-master\SMSApplicationSystem @ DealerMaster download\BulkSMSFacility\bin\ProudMonkey.Common.Controls.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
