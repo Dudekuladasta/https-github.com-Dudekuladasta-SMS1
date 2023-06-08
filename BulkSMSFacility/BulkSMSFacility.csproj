@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6787C353-F7F2-43F0-828F-3B33ED59F6E8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BulkSMSFacility</RootNamespace>
+    <AssemblyName>BulkSMSFacility</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\Ajax and ProudMonkey dlls for message box\Version2\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="ProudMonkey.Common.Controls">
+      <HintPath>..\..\Ajax and ProudMonkey dlls for message box\Version2\ProudMonkey.Common.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\DealerDetailsList.aspx" />
+    <Content Include="Admin\DealerRegistration.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\ModelDetailsList.aspx" />
+    <Content Include="Admin\ModelRegistration.aspx" />
+    <Content Include="Admin\UserDetails.aspx" />
+    <Content Include="Admin\ViewSMSHistory.aspx" />
+    <Content Include="BroadCastingPage\BroadCastingSMS.aspx" />
+    <Content Include="CSS\BSF.css" />
+    <Content Include="CSS\Copy of main.css" />
+    <Content Include="CSS\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="CSS\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="CSS\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="CSS\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="CSS\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="CSS\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="CSS\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="CSS\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="CSS\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="CSS\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="CSS\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="CSS\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="CSS\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="CSS\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="CSS\ui-lightness\jquery-ui-1.8.23.custom.css" />
+    <Content Include="CustomError.aspx" />
+    <Content Include="Images\Select1.jpg" />
+    <Content Include="Images\Toyota1.jpg" />
+    <Content Include="js\DropDowmMenu\jquery-1.3.1.min.js" />
+    <Content Include="js\DropDowmMenu\jquery.dropdownPlain.js" />
+    <Content Include="js\jkmegamenu.js" />
+    <Content Include="js\jquery-1.8.0.min.js" />
+    <Content Include="js\jquery-ui-1.8.23.custom.min.js" />
+    <Content Include="js\jquery-ui-timepicker-addon.js" />
+    <Content Include="js\nicEdit.js" />
+    <Content Include="js\nicEditorIcons.gif" />
+    <Content Include="LoginPage.aspx" />
+    <Content Include="LogOutPage.aspx" />
+    <Content Include="Script\jquery-1.11.2.min.js" />
+    <Content Include="Script\jquery-1.12.4.js" />
+    <Content Include="Script\jquery-1.8.0.min.js" />
+    <Content Include="Script\jquery-ui-1.8.23.custom.min.js" />
+    <Content Include="Script\jquery-ui-timepicker-addon.js" />
+    <Content Include="Script\jquery-ui.css" />
+    <Content Include="Script\jquery-ui.js" />
+    <Content Include="Script\jquery-ui.theme.css" />
+    <Content Include="Script\Watermark.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\DealerDetailsList.aspx.cs">
+      <DependentUpon>DealerDetailsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DealerDetailsList.aspx.designer.cs">
+      <DependentUpon>DealerDetailsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DealerRegistration.aspx.cs">
+      <DependentUpon>DealerRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DealerRegistration.aspx.designer.cs">
+      <DependentUpon>DealerRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModelDetailsList.aspx.cs">
+      <DependentUpon>ModelDetailsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModelDetailsList.aspx.designer.cs">
+      <DependentUpon>ModelDetailsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModelRegistration.aspx.cs">
+      <DependentUpon>ModelRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ModelRegistration.aspx.designer.cs">
+      <DependentUpon>ModelRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserDetails.aspx.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserDetails.aspx.designer.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewSMSHistory.aspx.cs">
+      <DependentUpon>ViewSMSHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewSMSHistory.aspx.designer.cs">
+      <DependentUpon>ViewSMSHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BEL\BulkSMS_BEL.cs" />
+    <Compile Include="BLL\BulkSMS_BLL.cs" />
+    <Compile Include="BroadCastingPage\BroadCastingSMS.aspx.cs">
+      <DependentUpon>BroadCastingSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BroadCastingPage\BroadCastingSMS.aspx.designer.cs">
+      <DependentUpon>BroadCastingSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomError.aspx.cs">
+      <DependentUpon>CustomError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomError.aspx.designer.cs">
+      <DependentUpon>CustomError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\BulkSMS_DAL.cs" />
+    <Compile Include="EmailExceptionLogging.cs" />
+    <Compile Include="ErrorLogging.cs" />
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOutPage.aspx.cs">
+      <DependentUpon>LogOutPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOutPage.aspx.designer.cs">
+      <DependentUpon>LogOutPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\BroadCastingMaster.Master.cs">
+      <DependentUpon>BroadCastingMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\BroadCastingMaster.Master.designer.cs">
+      <DependentUpon>BroadCastingMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CSS\ui-lightness\images\Thumbs.db" />
+    <Content Include="MasterPages\AdminMaster.Master" />
+    <Content Include="MasterPages\BroadCastingMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60885</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1525
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkSMSFacility", "BulkSMSFacility\BulkSMSFacility.csproj", "{6787C353-F7F2-43F0-828F-3B33ED59F6E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6787C353-F7F2-43F0-828F-3B33ED59F6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6787C353-F7F2-43F0-828F-3B33ED59F6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6787C353-F7F2-43F0-828F-3B33ED59F6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6787C353-F7F2-43F0-828F-3B33ED59F6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14880DEE-B57E-4EF3-AA27-E827999F4DB1}
+	EndGlobalSection
+EndGlobal
